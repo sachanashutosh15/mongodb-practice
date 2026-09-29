@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 1,
+    "name": "Engineering",
+    "location": "Mumbai"
+  },
+  {
+    "_id": 2,
+    "name": "Sales",
+    "location": "Bangalore"
+  },
+  {
+    "_id": 3,
+    "name": "Finance",
+    "location": "Pune"
+  },
+  {
+    "_id": 4,
+    "name": "HR",
+    "location": "Pune"
+  },
+  {
+    "_id": 5,
+    "name": "Operations",
+    "location": "Bangalore"
+  },
+  {
+    "_id": 6,
+    "name": "Support",
+    "location": "Mumbai"
+  }
+]

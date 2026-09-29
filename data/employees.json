@@ -1,0 +1,587 @@
+[
+  {
+    "_id": 1,
+    "name": "Rohan Malhotra",
+    "departmentId": 2,
+    "managerId": 6,
+    "salary": 123774,
+    "role": "Manager",
+    "skills": [
+      "Java",
+      "MongoDB"
+    ],
+    "joinedAt": "2025-11-17T00:00:00Z"
+  },
+  {
+    "_id": 2,
+    "name": "Meera Malhotra",
+    "departmentId": 4,
+    "managerId": null,
+    "salary": 135286,
+    "role": "Support Engineer",
+    "skills": [
+      "Java",
+      "AWS",
+      "Python",
+      "SQL",
+      "Node.js"
+    ],
+    "joinedAt": "2025-06-03T00:00:00Z"
+  },
+  {
+    "_id": 3,
+    "name": "Isha Gupta",
+    "departmentId": 5,
+    "managerId": 7,
+    "salary": 108168,
+    "role": "Senior Developer",
+    "skills": [
+      "MongoDB",
+      "Docker",
+      "JavaScript",
+      "React"
+    ],
+    "joinedAt": "2025-07-31T00:00:00Z"
+  },
+  {
+    "_id": 4,
+    "name": "Meera Malhotra",
+    "departmentId": 5,
+    "managerId": 2,
+    "salary": 146821,
+    "role": "Senior Developer",
+    "skills": [
+      "SQL",
+      "AWS",
+      "Node.js",
+      "Excel"
+    ],
+    "joinedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "_id": 5,
+    "name": "Diya Verma",
+    "departmentId": 5,
+    "managerId": 3,
+    "salary": 58510,
+    "role": "Manager",
+    "skills": [
+      "Excel",
+      "JavaScript",
+      "Node.js",
+      "Docker",
+      "React"
+    ],
+    "joinedAt": "2026-01-06T00:00:00Z"
+  },
+  {
+    "_id": 6,
+    "name": "Sneha Singh",
+    "departmentId": 4,
+    "managerId": 3,
+    "salary": 132284,
+    "role": "Manager",
+    "skills": [
+      "SQL",
+      "Excel"
+    ],
+    "joinedAt": "2026-05-08T00:00:00Z"
+  },
+  {
+    "_id": 7,
+    "name": "Arjun Kapoor",
+    "departmentId": 2,
+    "managerId": 3,
+    "salary": 148974,
+    "role": "Senior Developer",
+    "skills": [
+      "React",
+      "Python",
+      "Docker",
+      "Excel"
+    ],
+    "joinedAt": "2025-11-29T00:00:00Z"
+  },
+  {
+    "_id": 8,
+    "name": "Diya Kumar",
+    "departmentId": 3,
+    "managerId": 5,
+    "salary": 179431,
+    "role": "Analyst",
+    "skills": [
+      "Node.js",
+      "Docker",
+      "AWS",
+      "Excel",
+      "MongoDB"
+    ],
+    "joinedAt": "2025-06-10T00:00:00Z"
+  },
+  {
+    "_id": 9,
+    "name": "Meera Sharma",
+    "departmentId": 5,
+    "managerId": 3,
+    "salary": 83252,
+    "role": "Developer",
+    "skills": [
+      "Java",
+      "Python",
+      "React",
+      "Node.js"
+    ],
+    "joinedAt": "2025-04-11T00:00:00Z"
+  },
+  {
+    "_id": 10,
+    "name": "Ananya Singh",
+    "departmentId": 4,
+    "managerId": 3,
+    "salary": 175888,
+    "role": "HR Executive",
+    "skills": [
+      "React",
+      "Docker",
+      "Java",
+      "SQL"
+    ],
+    "joinedAt": "2025-03-28T00:00:00Z"
+  },
+  {
+    "_id": 11,
+    "name": "Diya Gupta",
+    "departmentId": 2,
+    "managerId": 7,
+    "salary": 93247,
+    "role": "HR Executive",
+    "skills": [
+      "Java",
+      "JavaScript"
+    ],
+    "joinedAt": "2026-03-06T00:00:00Z"
+  },
+  {
+    "_id": 12,
+    "name": "Aditya Sharma",
+    "departmentId": 1,
+    "managerId": 6,
+    "salary": 81042,
+    "role": "Support Engineer",
+    "skills": [
+      "Node.js",
+      "MongoDB",
+      "JavaScript"
+    ],
+    "joinedAt": "2025-04-22T00:00:00Z"
+  },
+  {
+    "_id": 13,
+    "name": "Kavya Kapoor",
+    "departmentId": 3,
+    "managerId": null,
+    "salary": 206961,
+    "role": "Support Engineer",
+    "skills": [
+      "Docker",
+      "JavaScript",
+      "Java",
+      "React",
+      "Python"
+    ],
+    "joinedAt": "2025-07-30T00:00:00Z"
+  },
+  {
+    "_id": 14,
+    "name": "Aarav Sharma",
+    "departmentId": 5,
+    "managerId": 4,
+    "salary": 185440,
+    "role": "Manager",
+    "skills": [
+      "Java",
+      "Python"
+    ],
+    "joinedAt": "2026-02-17T00:00:00Z"
+  },
+  {
+    "_id": 15,
+    "name": "Kabir Verma",
+    "departmentId": 1,
+    "managerId": 2,
+    "salary": 108168,
+    "role": "Senior Developer",
+    "skills": [
+      "AWS",
+      "React",
+      "Python",
+      "JavaScript"
+    ],
+    "joinedAt": "2025-07-11T00:00:00Z"
+  },
+  {
+    "_id": 16,
+    "name": "Isha Kapoor",
+    "departmentId": 5,
+    "managerId": 3,
+    "salary": 104207,
+    "role": "Manager",
+    "skills": [
+      "JavaScript",
+      "Node.js"
+    ],
+    "joinedAt": "2025-07-27T00:00:00Z"
+  },
+  {
+    "_id": 17,
+    "name": "Isha Jain",
+    "departmentId": 5,
+    "managerId": 7,
+    "salary": 59710,
+    "role": "Support Engineer",
+    "skills": [
+      "MongoDB",
+      "Node.js"
+    ],
+    "joinedAt": "2025-09-13T00:00:00Z"
+  },
+  {
+    "_id": 18,
+    "name": "Meera Mehta",
+    "departmentId": 5,
+    "managerId": 1,
+    "salary": 183453,
+    "role": "Developer",
+    "skills": [
+      "SQL",
+      "Docker",
+      "React"
+    ],
+    "joinedAt": "2025-01-24T00:00:00Z"
+  },
+  {
+    "_id": 19,
+    "name": "Aditya Kumar",
+    "departmentId": 5,
+    "managerId": null,
+    "salary": 92016,
+    "role": "Manager",
+    "skills": [
+      "SQL",
+      "MongoDB"
+    ],
+    "joinedAt": "2026-01-21T00:00:00Z"
+  },
+  {
+    "_id": 20,
+    "name": "Isha Verma",
+    "departmentId": 3,
+    "managerId": 2,
+    "salary": 192838,
+    "role": "Senior Developer",
+    "skills": [
+      "Java",
+      "AWS",
+      "Python",
+      "Docker",
+      "Excel"
+    ],
+    "joinedAt": "2025-03-13T00:00:00Z"
+  },
+  {
+    "_id": 21,
+    "name": "Aditya Malhotra",
+    "departmentId": 6,
+    "managerId": 5,
+    "salary": 59076,
+    "role": "Developer",
+    "skills": [
+      "SQL",
+      "Node.js",
+      "AWS",
+      "React",
+      "Python"
+    ],
+    "joinedAt": "2026-05-04T00:00:00Z"
+  },
+  {
+    "_id": 22,
+    "name": "Tanya Jain",
+    "departmentId": 3,
+    "managerId": null,
+    "salary": 211231,
+    "role": "Manager",
+    "skills": [
+      "Docker",
+      "SQL",
+      "AWS",
+      "React",
+      "Java"
+    ],
+    "joinedAt": "2025-08-10T00:00:00Z"
+  },
+  {
+    "_id": 23,
+    "name": "Kabir Agarwal",
+    "departmentId": 6,
+    "managerId": 6,
+    "salary": 67464,
+    "role": "HR Executive",
+    "skills": [
+      "SQL",
+      "Node.js",
+      "Java",
+      "MongoDB"
+    ],
+    "joinedAt": "2025-03-20T00:00:00Z"
+  },
+  {
+    "_id": 24,
+    "name": "Isha Gupta",
+    "departmentId": 6,
+    "managerId": 6,
+    "salary": 128015,
+    "role": "Manager",
+    "skills": [
+      "Node.js",
+      "JavaScript"
+    ],
+    "joinedAt": "2026-04-28T00:00:00Z"
+  },
+  {
+    "_id": 25,
+    "name": "Nikhil Kapoor",
+    "departmentId": 3,
+    "managerId": 4,
+    "salary": 71799,
+    "role": "Senior Developer",
+    "skills": [
+      "MongoDB",
+      "Python"
+    ],
+    "joinedAt": "2025-08-18T00:00:00Z"
+  },
+  {
+    "_id": 26,
+    "name": "Sneha Malhotra",
+    "departmentId": 5,
+    "managerId": 6,
+    "salary": 72077,
+    "role": "Developer",
+    "skills": [
+      "AWS",
+      "Java"
+    ],
+    "joinedAt": "2025-02-17T00:00:00Z"
+  },
+  {
+    "_id": 27,
+    "name": "Tanya Agarwal",
+    "departmentId": 3,
+    "managerId": 6,
+    "salary": 48235,
+    "role": "Manager",
+    "skills": [
+      "Python",
+      "Node.js",
+      "SQL",
+      "React",
+      "Excel"
+    ],
+    "joinedAt": "2025-03-28T00:00:00Z"
+  },
+  {
+    "_id": 28,
+    "name": "Isha Gupta",
+    "departmentId": 2,
+    "managerId": 4,
+    "salary": 123939,
+    "role": "Manager",
+    "skills": [
+      "MongoDB",
+      "Node.js",
+      "Excel",
+      "SQL",
+      "Docker"
+    ],
+    "joinedAt": "2025-08-04T00:00:00Z"
+  },
+  {
+    "_id": 29,
+    "name": "Nikhil Kapoor",
+    "departmentId": 1,
+    "managerId": 5,
+    "salary": 110981,
+    "role": "Senior Developer",
+    "skills": [
+      "Excel",
+      "SQL",
+      "Docker",
+      "JavaScript",
+      "Node.js"
+    ],
+    "joinedAt": "2025-06-05T00:00:00Z"
+  },
+  {
+    "_id": 30,
+    "name": "Aarav Jain",
+    "departmentId": 3,
+    "managerId": 6,
+    "salary": 131387,
+    "role": "Analyst",
+    "skills": [
+      "Python",
+      "MongoDB",
+      "React",
+      "Java"
+    ],
+    "joinedAt": "2025-11-05T00:00:00Z"
+  },
+  {
+    "_id": 31,
+    "name": "Ishaan Kapoor",
+    "departmentId": 3,
+    "managerId": 2,
+    "salary": 149396,
+    "role": "Manager",
+    "skills": [
+      "Docker",
+      "SQL",
+      "AWS",
+      "Java"
+    ],
+    "joinedAt": "2025-05-24T00:00:00Z"
+  },
+  {
+    "_id": 32,
+    "name": "Isha Mehta",
+    "departmentId": 1,
+    "managerId": 3,
+    "salary": 200248,
+    "role": "HR Executive",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "Docker"
+    ],
+    "joinedAt": "2026-04-28T00:00:00Z"
+  },
+  {
+    "_id": 33,
+    "name": "Ishaan Kapoor",
+    "departmentId": 3,
+    "managerId": 1,
+    "salary": 152254,
+    "role": "Support Engineer",
+    "skills": [
+      "MongoDB",
+      "React",
+      "SQL",
+      "Excel",
+      "AWS"
+    ],
+    "joinedAt": "2025-03-20T00:00:00Z"
+  },
+  {
+    "_id": 34,
+    "name": "Meera Jain",
+    "departmentId": 1,
+    "managerId": 7,
+    "salary": 201744,
+    "role": "Analyst",
+    "skills": [
+      "Java",
+      "Excel",
+      "Python",
+      "React",
+      "JavaScript"
+    ],
+    "joinedAt": "2026-02-09T00:00:00Z"
+  },
+  {
+    "_id": 35,
+    "name": "Diya Malhotra",
+    "departmentId": 5,
+    "managerId": 1,
+    "salary": 73670,
+    "role": "Senior Developer",
+    "skills": [
+      "MongoDB",
+      "JavaScript",
+      "Python",
+      "Docker"
+    ],
+    "joinedAt": "2025-06-19T00:00:00Z"
+  },
+  {
+    "_id": 36,
+    "name": "Meera Verma",
+    "departmentId": 1,
+    "managerId": 1,
+    "salary": 112826,
+    "role": "Senior Developer",
+    "skills": [
+      "Docker",
+      "AWS",
+      "Python"
+    ],
+    "joinedAt": "2025-08-26T00:00:00Z"
+  },
+  {
+    "_id": 37,
+    "name": "Neha Malhotra",
+    "departmentId": 2,
+    "managerId": 5,
+    "salary": 51438,
+    "role": "Analyst",
+    "skills": [
+      "React",
+      "Python"
+    ],
+    "joinedAt": "2026-04-17T00:00:00Z"
+  },
+  {
+    "_id": 38,
+    "name": "Aditya Verma",
+    "departmentId": 6,
+    "managerId": 2,
+    "salary": 136312,
+    "role": "Manager",
+    "skills": [
+      "Docker",
+      "SQL",
+      "Excel",
+      "MongoDB"
+    ],
+    "joinedAt": "2025-09-01T00:00:00Z"
+  },
+  {
+    "_id": 39,
+    "name": "Arjun Kapoor",
+    "departmentId": 6,
+    "managerId": 7,
+    "salary": 128600,
+    "role": "Developer",
+    "skills": [
+      "JavaScript",
+      "Node.js",
+      "Excel",
+      "Python"
+    ],
+    "joinedAt": "2025-06-25T00:00:00Z"
+  },
+  {
+    "_id": 40,
+    "name": "Arjun Gupta",
+    "departmentId": 6,
+    "managerId": 3,
+    "salary": 180264,
+    "role": "Senior Developer",
+    "skills": [
+      "AWS",
+      "Java",
+      "Python"
+    ],
+    "joinedAt": "2026-05-06T00:00:00Z"
+  }
+]

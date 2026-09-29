@@ -1,0 +1,275 @@
+[
+  {
+    "_id": 1,
+    "name": "Keyboard",
+    "category": "Electronics",
+    "price": 21651,
+    "stock": 38,
+    "tags": [
+      "wireless",
+      "beginner"
+    ],
+    "supplierId": 2,
+    "createdAt": "2025-01-05T00:00:00Z"
+  },
+  {
+    "_id": 2,
+    "name": "Mouse",
+    "category": "Electronics",
+    "price": 15517,
+    "stock": 79,
+    "tags": [
+      "popular",
+      "premium",
+      "eco"
+    ],
+    "supplierId": 4,
+    "createdAt": "2025-09-17T00:00:00Z"
+  },
+  {
+    "_id": 3,
+    "name": "Headphones",
+    "category": "Electronics",
+    "price": 9190,
+    "stock": 16,
+    "tags": [
+      "popular",
+      "professional"
+    ],
+    "supplierId": 6,
+    "createdAt": "2025-05-26T00:00:00Z"
+  },
+  {
+    "_id": 4,
+    "name": "Monitor",
+    "category": "Electronics",
+    "price": 5669,
+    "stock": 56,
+    "tags": [
+      "eco",
+      "professional",
+      "wireless"
+    ],
+    "supplierId": 1,
+    "createdAt": "2025-12-08T00:00:00Z"
+  },
+  {
+    "_id": 5,
+    "name": "Webcam",
+    "category": "Electronics",
+    "price": 18673,
+    "stock": 38,
+    "tags": [
+      "popular",
+      "professional",
+      "new"
+    ],
+    "supplierId": 2,
+    "createdAt": "2025-02-24T00:00:00Z"
+  },
+  {
+    "_id": 6,
+    "name": "USB Hub",
+    "category": "Electronics",
+    "price": 24827,
+    "stock": 70,
+    "tags": [
+      "eco"
+    ],
+    "supplierId": 5,
+    "createdAt": "2025-11-06T00:00:00Z"
+  },
+  {
+    "_id": 7,
+    "name": "Algorithms Book",
+    "category": "Books",
+    "price": 7401,
+    "stock": 91,
+    "tags": [
+      "sale",
+      "wireless"
+    ],
+    "supplierId": 5,
+    "createdAt": "2025-09-16T00:00:00Z"
+  },
+  {
+    "_id": 8,
+    "name": "Database Book",
+    "category": "Books",
+    "price": 16508,
+    "stock": 32,
+    "tags": [
+      "popular"
+    ],
+    "supplierId": 7,
+    "createdAt": "2026-03-01T00:00:00Z"
+  },
+  {
+    "_id": 9,
+    "name": "System Design Book",
+    "category": "Books",
+    "price": 9566,
+    "stock": 5,
+    "tags": [
+      "wireless"
+    ],
+    "supplierId": 3,
+    "createdAt": "2025-11-23T00:00:00Z"
+  },
+  {
+    "_id": 10,
+    "name": "JavaScript Book",
+    "category": "Books",
+    "price": 9083,
+    "stock": 20,
+    "tags": [
+      "professional",
+      "eco",
+      "wireless"
+    ],
+    "supplierId": 7,
+    "createdAt": "2025-10-15T00:00:00Z"
+  },
+  {
+    "_id": 11,
+    "name": "Clean Code",
+    "category": "Books",
+    "price": 816,
+    "stock": 14,
+    "tags": [
+      "new"
+    ],
+    "supplierId": 1,
+    "createdAt": "2026-03-04T00:00:00Z"
+  },
+  {
+    "_id": 12,
+    "name": "Yoga Mat",
+    "category": "Fitness",
+    "price": 12598,
+    "stock": 74,
+    "tags": [
+      "new",
+      "sale",
+      "popular"
+    ],
+    "supplierId": 1,
+    "createdAt": "2025-06-07T00:00:00Z"
+  },
+  {
+    "_id": 13,
+    "name": "Resistance Bands",
+    "category": "Fitness",
+    "price": 12448,
+    "stock": 5,
+    "tags": [
+      "sale",
+      "wireless"
+    ],
+    "supplierId": 4,
+    "createdAt": "2025-12-08T00:00:00Z"
+  },
+  {
+    "_id": 14,
+    "name": "Dumbbells",
+    "category": "Fitness",
+    "price": 3868,
+    "stock": 45,
+    "tags": [
+      "beginner",
+      "eco",
+      "wireless"
+    ],
+    "supplierId": 3,
+    "createdAt": "2025-05-02T00:00:00Z"
+  },
+  {
+    "_id": 15,
+    "name": "Running Shoes",
+    "category": "Fitness",
+    "price": 5824,
+    "stock": 22,
+    "tags": [
+      "premium",
+      "popular"
+    ],
+    "supplierId": 6,
+    "createdAt": "2026-02-05T00:00:00Z"
+  },
+  {
+    "_id": 16,
+    "name": "Protein Shaker",
+    "category": "Fitness",
+    "price": 13991,
+    "stock": 85,
+    "tags": [
+      "sale",
+      "new",
+      "popular"
+    ],
+    "supplierId": 2,
+    "createdAt": "2025-07-15T00:00:00Z"
+  },
+  {
+    "_id": 17,
+    "name": "Desk Lamp",
+    "category": "Home",
+    "price": 1768,
+    "stock": 60,
+    "tags": [
+      "sale"
+    ],
+    "supplierId": 8,
+    "createdAt": "2025-06-29T00:00:00Z"
+  },
+  {
+    "_id": 18,
+    "name": "Chair",
+    "category": "Home",
+    "price": 10500,
+    "stock": 29,
+    "tags": [
+      "premium"
+    ],
+    "supplierId": 4,
+    "createdAt": "2025-07-24T00:00:00Z"
+  },
+  {
+    "_id": 19,
+    "name": "Water Bottle",
+    "category": "Home",
+    "price": 11256,
+    "stock": 35,
+    "tags": [
+      "eco"
+    ],
+    "supplierId": 6,
+    "createdAt": "2025-11-25T00:00:00Z"
+  },
+  {
+    "_id": 20,
+    "name": "Backpack",
+    "category": "Home",
+    "price": 17192,
+    "stock": 51,
+    "tags": [
+      "wireless",
+      "premium",
+      "beginner"
+    ],
+    "supplierId": 5,
+    "createdAt": "2025-04-02T00:00:00Z"
+  },
+  {
+    "_id": 21,
+    "name": "Coffee Mug",
+    "category": "Home",
+    "price": 19524,
+    "stock": 33,
+    "tags": [
+      "popular"
+    ],
+    "supplierId": 7,
+    "createdAt": "2025-06-26T00:00:00Z"
+  }
+]
