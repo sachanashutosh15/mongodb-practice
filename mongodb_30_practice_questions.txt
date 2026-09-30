@@ -279,6 +279,17 @@ Return every product with its reviews.
 Result should contain product information and a reviews array.
 Relationship: products._id -> reviews.productId.
 
+db.products.aggregate([
+    {
+        $lookup: {
+            from: "reviews",
+            localField: "_id",
+            foreignField: "productId",
+            as: "reviews"
+        }
+    }
+])
+
 14. Average product rating
 Find the average rating for every product.
 Products with no reviews should still appear.
@@ -287,6 +298,28 @@ Return:
 - average rating
 - number of reviews.
 
+db.products.aggregate([
+    {
+        $lookup: {
+            from: "reviews",
+            localField: "_id",
+            foreignField: "productId",
+            as: "reviews"
+        }
+    },
+    {
+        $project: {
+            productName: "$name",
+            averageRating: {
+                $avg: "$reviews.rating"
+            },
+            reviewsCount: {
+                $size: "$reviews"
+            }
+        }
+    }
+])
+
 15. User reviews
 Return every review along with:
 - review title
@@ -294,6 +327,39 @@ Return every review along with:
 - user name
 - product name.
 This requires two $lookup operations.
+
+db.reviews.aggregate([
+    {
+        $lookup: {
+            from: "users",
+            localField: "userId",
+            foreignField: "_id",
+            as: "user"
+        }
+    },
+    {
+        $unwind: "$user"
+    },
+    {
+        $lookup: {
+            from: "products",
+            localField: "productId",
+            foreignField: "_id",
+            as: "product"
+        }
+    },
+    {
+        $unwind: "$product"
+    },
+    {
+        $project: {
+            reviewTitle: "$title",
+            rating: 1,
+            userName: "$user.name",
+            productName: "$product.name"
+        }
+    }
+])
 
 
 LEVEL 4 — $LOOKUP WITH PIPELINES
@@ -304,10 +370,85 @@ Return:
 - user
 - totalSpent.
 
+db.users.aggregate([
+    {
+        $lookup: {
+            from: "orders",
+            let: { userId: "$_id" },
+            pipeline: [
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                {
+                                    $eq: ["$$userId", "$userId"]
+                                },
+                                {
+                                    $eq: ["$status", "delivered"]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            as: "orders",
+        }
+    },
+    {
+        $project: {
+            name: 1,
+            totalSpenditure: {
+                $sum: "$orders.totalAmount"
+            }
+        }
+    },
+    {
+        $match: {
+            totalSpenditure: {
+                $gt: 50000
+            }
+        }
+    }
+])
+
 17. Users with recent orders
 Find users who have placed at least one order in the last 90 days.
 Return the user and their matching orders.
 Try putting the filtering inside the $lookup pipeline.
+
+db.users.aggregate([
+    {
+        $lookup: {
+            from: "orders",
+            let: { userId: "$_id" },
+            pipeline: [
+                {
+                    $match: {
+                        $expr: {
+                            $and: [
+                                {
+                                    $eq: ["$userId", "$$userId"]
+                                },
+                                {
+                                    $gt: [
+                                        "$orderDate",
+                                        {
+                                            $subtract: [
+                                                "$$NOW",
+                                                90 * 24 * 60 * 60 * 1000
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            as: "orders"
+        }
+    }
+])
 
 18. Highly rated products
 Find products whose average rating is at least 4.5 and which have at least 3 reviews.
@@ -315,6 +456,44 @@ Return:
 - product
 - averageRating
 - reviewCount.
+
+db.products.aggregate([
+    {
+        $lookup: {
+            from: "reviews",
+            localField: "_id",
+            foreignField: "productId",
+            as: "reviews"
+        }
+    },
+    {
+        $addFields: {
+            averageRating: {
+                $avg: "$reviews.rating"
+            },
+            reviewCount: {
+                $size: "$reviews"
+            }
+        }
+    },
+    {
+        $match: {
+            averageRating: {
+                $gte: 4.5
+            },
+            reviewCount: {
+                $gte: 3
+            }
+        }
+    },
+    {
+        $project: {
+            name: 1,
+            averageRating: 1,
+            reviewCount: 1
+        }
+    }
+])
 
 19. Customer order statistics
 For every user, return:
